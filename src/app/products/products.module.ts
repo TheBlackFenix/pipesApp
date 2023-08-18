@@ -7,6 +7,9 @@ import { NumbersPageComponent } from './pages/numbers-page/numbers-page.componen
 import { UncommonPageComponent } from './pages/uncommon-page/uncommon-page.component';
 import { PrimeNgModule } from '../prime-ng/prime-ng.module';
 import { OrderPageComponent } from './pages/order-page/order-page.component';
+import { ToogleCasePipe } from './pipes/toogle-case.pipe';
+import { CanFlyPipe } from './pipes/canFly.pipe';
+import { SortByPipe } from './pipes/sort-by.pipe';
 
 
 @NgModule({
@@ -15,11 +18,14 @@ import { OrderPageComponent } from './pages/order-page/order-page.component';
     NumbersPageComponent,
     UncommonPageComponent,
     OrderPageComponent,
+    ToogleCasePipe,
+    CanFlyPipe,
+    SortByPipe
   ],
   imports: [
     CommonModule,
     ProductsRoutingModule,
-    PrimeNgModule
+    PrimeNgModule,
   ]
 })
 export class ProductsModule { }
